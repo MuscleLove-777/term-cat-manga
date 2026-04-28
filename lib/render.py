@@ -71,6 +71,8 @@ def render_page(term: str, summary: str, panels: list[dict],
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<!-- __MAIN_LANDMARK__START__ -->
+<main>
 <div class="wrap">
   <a class="back" href="../">← 用語一覧に戻る</a>
   <div class="title">
@@ -102,6 +104,8 @@ def render_page(term: str, summary: str, panels: list[dict],
 
   <p class="foot">© にゃんこ用語マンガ / Powered by Claude Code</p>
 </div>
+</main>
+<!-- __MAIN_LANDMARK__END__ -->
 </body>
 </html>"""
 
@@ -134,6 +138,8 @@ def render_index(terms: list[dict], site_url: str) -> str:
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<!-- __MAIN_LANDMARK__START__ -->
+<main>
 <div class="wrap">
   <div class="title">
     <h1>🐈 にゃんこ用語マンガ</h1>
@@ -150,5 +156,7 @@ def render_index(terms: list[dict], site_url: str) -> str:
 
   <p class="foot">© にゃんこ用語マンガ / Powered by Claude Code</p>
 </div>
+</main>
+<!-- __MAIN_LANDMARK__END__ -->
 </body>
 </html>"""
